@@ -88,28 +88,28 @@ int main()
                 dir = getch();
                 switch(dir){
                     case 75:    
-						for( int i= 0; i<4; i++){
-							ii = 3;
-							co( mapp[i][ii - 3], mapp[i][ii - 2], mapp[i][ii - 1], mapp[i][ii], i, 0, 0);
-						}
+			for( int i= 0; i<4; i++){
+				ii = 3;
+				co( mapp[i][ii - 3], mapp[i][ii - 2], mapp[i][ii - 1], mapp[i][ii], i, 0, 0);
+			}
                         break;
                     case 77:     
-						for( int i=0; i<4; i++){
-							ii = 3;
-							co( mapp[i][ii], mapp[i][ii - 1], mapp[i][ii - 2], mapp[i][ii - 3], i, 3, 2);
-						}
+			for( int i=0; i<4; i++){
+				ii = 3;
+				co( mapp[i][ii], mapp[i][ii - 1], mapp[i][ii - 2], mapp[i][ii - 3], i, 3, 2);
+			}
                         break;
                     case 72:    
-						for( int i=0; i<4; i++){
-							ii = 3;
-							co( mapp[ii - 3][i], mapp[ii - 2][i], mapp[ii - 1][i], mapp[ii][i], 0, i, 1);
-						}
+			for( int i=0; i<4; i++){
+				ii = 3;
+				co( mapp[ii - 3][i], mapp[ii - 2][i], mapp[ii - 1][i], mapp[ii][i], 0, i, 1);
+			}
                         break;
                     case 80:    
-						for( int i=0; i<4; i++){
-							ii = 3;
-							co( mapp[ii][i], mapp[ii - 1][i], mapp[ii - 2][i], mapp[ii - 3][i], 3, i, 3 );
-						}
+			for( int i=0; i<4; i++){
+				ii = 3;
+				co( mapp[ii][i], mapp[ii - 1][i], mapp[ii - 2][i], mapp[ii - 3][i], 3, i, 3 );
+			}
                         break;
                 }
     	}
@@ -152,6 +152,6 @@ int main()
             }
             cout<<endl<<endl<<endl;
         }    
-    cout<<" you lose "<<endl<<" 你的分數 "<< point<<" 分";
+    cout<<" you lose "<<endl<<"Your score "<< point;
     return 0;
 }
