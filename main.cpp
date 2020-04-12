@@ -152,6 +152,6 @@ int main()
             }
             cout<<endl<<endl<<endl;
         }    
-    cout<<" you lose "<<endl<<"Your score "<< point;
+    cout<<" the END "<<endl<<"Your score "<< point;
     return 0;
 }
