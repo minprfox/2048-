@@ -1,3 +1,8 @@
+/*
+	debug:
+	Chinese change to Engilsh;
+	
+*/
 #include<iostream>
 #include<conio.h>
 #include<cstdlib>
@@ -53,7 +58,6 @@ void ran(int cou){
 			point += fomap[i];
 			fomap[i + 1]= -1;
 			i += 1;
-			
 		}
 	}
 	ii = 0;
