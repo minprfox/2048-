@@ -2,6 +2,11 @@
 	debug:
 	Chinese change to Engilsh;
 	
+	while(starx > 3){			starx = starx / 4;
+               starx -= 4;	change to =>	stary = starx % 4; 
+                stary++;
+            }
+	
 */
 #include<iostream>
 #include<conio.h>
@@ -20,13 +25,11 @@ void ran(int cou){
      for( i=0; i<cou; i++){
         do{
         	stary=0;
-            srand(time(0) + j);
-            starx= rand() % 16;
-            while(starx > 3){
-                starx -= 4;
-                stary++;
-            }
-            j++;
+            	srand(time(0) + j);
+            	starx= rand() % 16;
+            	starx = starx / 4;
+		stary = starx % 4; 
+            	j++;
         }while( mapp[stary][starx] != 0);
         a = rand() % times;
         if( starx <= 10)
