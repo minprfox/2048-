@@ -2,8 +2,8 @@
 	debug:
 	Chinese change to Engilsh;
 	
-	while(starx > 3){			starx = starx / 4;
-               starx -= 4;	change to =>	stary = starx % 4; 
+	while(starx > 3){			stary = starx % 4;
+               starx -= 4;	change to =>	starx = starx / 4; 
                 stary++;
             }
 	
@@ -27,8 +27,8 @@ void ran(int cou){
         	stary=0;
             	srand(time(0) + j);
             	starx= rand() % 16;
-            	starx = starx / 4;
-		stary = starx % 4; 
+            	stary = starx % 4;
+		starx = starx / 4; 
             	j++;
         }while( mapp[stary][starx] != 0);
         a = rand() % times;
